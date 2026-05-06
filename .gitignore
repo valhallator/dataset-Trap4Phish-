@@ -1,0 +1,16 @@
+# Dados e Modelos Pesados
+data/*.csv
+data/*.xlsx
+*.pkl
+code_output/**/*.csv
+
+# Ficheiros Temporários e Backups
+*.bak
+*.bak.*
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+
+# Logs de Erro
+error.log
+/var/log/

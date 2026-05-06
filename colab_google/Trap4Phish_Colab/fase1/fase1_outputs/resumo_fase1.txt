@@ -1,0 +1,5 @@
+Resumo da Fase 1 - Análise Exploratória e Clustering
+Número de linhas: 19296
+Número de colunas: 12
+Tempo total de execução: 623.80 segundos
+Silhouette Score: 0.6340

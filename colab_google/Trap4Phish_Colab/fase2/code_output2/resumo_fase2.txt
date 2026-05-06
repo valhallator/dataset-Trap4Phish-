@@ -1,0 +1,4 @@
+Resumo da Fase 2 - Tratamento de Dados
+Dataset final: dataset_final_fase2.csv
+Amostras totais: 19998
+Features selecionadas: ['text_length', 'object_count', 'total_filters', 'metadata_size', 'file_size', 'title_chars']

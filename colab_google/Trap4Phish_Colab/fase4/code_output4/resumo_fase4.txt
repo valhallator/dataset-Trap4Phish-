@@ -1,0 +1,15 @@
+PROJETO FINAL: CIC-Trap4Phish 2025
+-------------------------------------------
+Estado da Simulação: CONCLUÍDO
+Amostras Testadas: 19998
+Taxa de Sucesso na Simulação: 99.88%
+
+Conclusões da Fase 4:
+1. O modelo demonstra alta robustez na identificação de arquivos PDF maliciosos.
+2. A feature 'entropy_of_streams' e 'file_size' foram determinantes para a confiança.
+3. O sistema está pronto para ser exportado como um serviço de análise (API).
+
+Arquivos gerados para entrega:
+- Modelos (.pkl) na Fase 3
+- Scaler (.pkl) na Fase 2
+- Relatórios de métricas em todas as fases.

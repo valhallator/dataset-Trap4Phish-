@@ -1,0 +1,20 @@
+Resumo da Fase 2 - Tratamento de Dados
+
+Feature removida (redundância): endstream_count (correlação ~1.0 com stream_count)
+
+Outliers: Clipagem IQR × 3 aplicada a 8 features contínuas
+
+Transformação log1p aplicada a: ['text_length', 'total_filters', 'title_chars', 'file_size', 'object_count', 'stream_count', 'metadata_size']
+
+Normalização: RobustScaler (usa mediana e IQR, robusto a outliers)
+
+Balanceamento SMOTE:
+  - Antes: {0: 9297, 1: 9999}
+  - Depois: balanceado (50/50)
+
+Seleção de features:
+  - Método 1: ANOVA F-score (SelectKBest)
+  - Método 2: Random Forest Feature Importance
+  - Top features: ['text_length', 'object_count', 'total_filters', 'metadata_size', 'file_size', 'title_chars']
+
+Dataset final: dataset_final_fase2.csv

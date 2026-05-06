@@ -1,0 +1,20 @@
+Resumo da Fase 3 - Modelos de Machine Learning
+
+Dataset usado: dataset_final_fase2.csv
+Split: 80% treino / 20% teste (estratificado)
+Cross-validation: 5-fold estratificado
+
+Modelos treinados:
+  - K Neighbors Classifier: Acc=0.9925 | CV=0.9939 | F1=0.9925 | Tempo=0.0221s
+  - Logistic Regression: Acc=0.9715 | CV=0.9731 | F1=0.9715 | Tempo=0.5999s
+  - Decision Tree: Acc=0.9915 | CV=0.9932 | F1=0.9915 | Tempo=0.0815s
+  - Random Forest: Acc=0.9952 | CV=0.9968 | F1=0.9952 | Tempo=0.3603s
+  - SVM: Acc=0.984 | CV=0.9839 | F1=0.984 | Tempo=4.6813s
+  - Naive Bayes: Acc=0.9277 | CV=0.9299 | F1=0.9275 | Tempo=0.0048s
+  - Linear Regression: Acc=0.9245 | CV=0.9245 | F1=0.9242 | Tempo=0.0033s
+
+Melhor modelo: Random Forest
+  Accuracy:    0.9952
+  CV Accuracy: 0.9968
+  F-Score:     0.9952
+  ROC-AUC:     0.999

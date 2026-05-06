@@ -1,0 +1,40 @@
+Resumo da Fase 4 - Simulação de Uso dos Modelos
+
+Pipeline aplicado:
+  1. Valores originais do PDF
+  2. Transformação log1p
+  3. RobustScaler (da Fase 2)
+  4. Predição com modelos da Fase 3
+
+Caso: Caso_A_Legitimo
+  Valores: {'text_length': 50000, 'object_count': 150, 'total_filters': 10, 'metadata_size': 250, 'file_size': 800000, 'title_chars': 35}
+  K_Neighbors_Classifier: LEGÍTIMO
+  Logistic_Regression: LEGÍTIMO
+  Decision_Tree: LEGÍTIMO
+  Random_Forest: LEGÍTIMO
+  SVM: LEGÍTIMO
+  Naive_Bayes: LEGÍTIMO
+  Linear_Regression: LEGÍTIMO
+  VOTO MAIORITÁRIO: LEGÍTIMO
+
+Caso: Caso_B_Phishing
+  Valores: {'text_length': 0, 'object_count': 5, 'total_filters': 0, 'metadata_size': 0, 'file_size': 15000, 'title_chars': 0}
+  K_Neighbors_Classifier: PHISHING
+  Logistic_Regression: PHISHING
+  Decision_Tree: PHISHING
+  Random_Forest: PHISHING
+  SVM: PHISHING
+  Naive_Bayes: PHISHING
+  Linear_Regression: PHISHING
+  VOTO MAIORITÁRIO: PHISHING
+
+Caso: Caso_C_Ambiguo
+  Valores: {'text_length': 1200, 'object_count': 80, 'total_filters': 5, 'metadata_size': 80, 'file_size': 120000, 'title_chars': 10}
+  K_Neighbors_Classifier: LEGÍTIMO
+  Logistic_Regression: LEGÍTIMO
+  Decision_Tree: LEGÍTIMO
+  Random_Forest: LEGÍTIMO
+  SVM: LEGÍTIMO
+  Naive_Bayes: LEGÍTIMO
+  Linear_Regression: LEGÍTIMO
+  VOTO MAIORITÁRIO: LEGÍTIMO

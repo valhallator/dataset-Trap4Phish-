@@ -1,0 +1,26 @@
+Resumo da Fase 1 - Análise Exploratória e Clustering
+
+O dataset apresenta 19296 amostras e 11 colunas (incluindo label).
+
+
+Principais pontos:
+- Não existem valores em falta nas features nem na label, o que simplifica o pré-processamento.
+- A distribuição da variável alvo está quase equilibrada: {1: 0.5181902985074627, 0: 0.4818097014925373} (0=legítimo, 1=phishing).
+
+- As estatísticas descritivas mostram distribuições muito assimétricas e outliers extremos em várias features, nomeadamente file_size, text_length e object_count.
+- A matriz de correlação revela relações fortes entre stream_count e endstream_count, e correlações negativas relevantes entre entropy_of_streams, metadata_size e a label.
+- O clustering (KMeans + PCA) mostra dois grupos, mas a separação é dominada por outliers e não reflete uma divisão genuína entre phishing e legítimo.
+
+- Boxplots por classe mostram que as features mais discriminativas são file_size, text_length, entropy_of_streams e metadata_size.
+
+
+Principais desafios identificados:
+- Forte assimetria e presença de outliers em 7 das 10 features.
+- Necessidade de normalização robusta e possível transformação logarítmica na Fase 2.
+- Possível remoção de features redundantes (ex: stream_count/endstream_count).
+
+
+Próximos passos:
+- Aplicar normalização e/ou transformação logarítmica.
+- Selecionar features mais relevantes.
+- Avançar para modelação supervisionada (classificação).
